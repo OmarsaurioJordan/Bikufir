@@ -1,0 +1,1615 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Sprites/d_moni_cuellera_strip11.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Editor.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/d_moni_cabello_strip11.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/d_moni_calzado_strip11.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/d_moni_fondo_strip11.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/d_moni_camisa_strip11.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/d_moni_chaleco_strip11.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/d_moni_piel.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/d_moni_pantalon_strip11.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/d_moni_barba_strip11.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/d_moni_tatuajeinf_strip11.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/d_moni_pelo_strip11.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/d_moni_mangas_strip11.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/d_moni_falda_strip11.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/d_moni_ojos_strip11.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/d_moni_gafas_strip11.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/d_moni_interior_strip11.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/d_moni_sombrero_strip11.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/d_moni_tatuajesup_strip11.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/TemaBoton.tres" type="Theme" id=20]
+[ext_resource path="res://Sprites/TemaBlanco.tres" type="Theme" id=21]
+[ext_resource path="res://Sound/gato.wav" type="AudioStream" id=22]
+[ext_resource path="res://Sound/loro.wav" type="AudioStream" id=23]
+
+[node name="Editor" type="Control"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ViewC" type="ViewportContainer" parent="."]
+margin_left = 360.0
+margin_right = 680.0
+margin_bottom = 600.0
+stretch = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="View" type="Viewport" parent="ViewC"]
+size = Vector2( 320, 600 )
+transparent_bg = true
+handle_input_locally = false
+disable_3d = true
+usage = 0
+render_target_update_mode = 3
+gui_disable_input = true
+
+[node name="Monigote" type="Node2D" parent="ViewC/View"]
+position = Vector2( 160, 600 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fondo" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 5 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cabello" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 3 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Piel" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 8 )
+offset = Vector2( 0, -300 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TatuajeInf" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 11 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TatuajeSup" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 19 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ojos" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 15 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Calzado" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 4 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Interior" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 17 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pantalon" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 9 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Falda" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 14 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Mangas" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 13 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Camisa" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 6 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Chaleco" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 7 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cuellera" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 1 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Barba" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 10 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Gafas" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 16 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pelo" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 12 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sombrero" type="Sprite" parent="ViewC/View/Monigote"]
+texture = ExtResource( 18 )
+offset = Vector2( 0, -300 )
+hframes = 11
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Modo" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bsombrero" type="Button" parent="Modo"]
+margin_left = 184.0
+margin_top = 24.0
+margin_right = 339.0
+margin_bottom = 56.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Hat"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bcabello" type="Button" parent="Modo"]
+margin_left = 184.0
+margin_top = 64.0
+margin_right = 339.0
+margin_bottom = 96.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Back Hair"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bpelo" type="Button" parent="Modo"]
+margin_left = 184.0
+margin_top = 104.0
+margin_right = 339.0
+margin_bottom = 136.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Front Hair"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bgafas" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 171.0
+margin_bottom = 56.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Glasses"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BojosPiel" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 171.0
+margin_bottom = 96.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Eyes / Skin"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bbarba" type="Button" parent="Modo"]
+margin_left = 184.0
+margin_top = 144.0
+margin_right = 339.0
+margin_bottom = 176.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Beard"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bcollar" type="Button" parent="Modo"]
+margin_left = 184.0
+margin_top = 232.0
+margin_right = 339.0
+margin_bottom = 264.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Necklace"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bcamisa" type="Button" parent="Modo"]
+margin_left = 184.0
+margin_top = 272.0
+margin_right = 339.0
+margin_bottom = 304.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Shirt"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bchaqueta" type="Button" parent="Modo"]
+margin_left = 184.0
+margin_top = 312.0
+margin_right = 339.0
+margin_bottom = 344.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Coat"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bmangas" type="Button" parent="Modo"]
+margin_left = 184.0
+margin_top = 352.0
+margin_right = 339.0
+margin_bottom = 384.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Sleeves"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Binterior" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 232.0
+margin_right = 171.0
+margin_bottom = 264.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Underwear"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bpantalon" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 272.0
+margin_right = 171.0
+margin_bottom = 304.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Pants"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bfalda" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 312.0
+margin_right = 171.0
+margin_bottom = 344.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Skirt"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bcalzado" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 352.0
+margin_right = 171.0
+margin_bottom = 384.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Shoes"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BtatuajesU" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 104.0
+margin_right = 171.0
+margin_bottom = 136.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Tattoos Up"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BtatuajesD" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 144.0
+margin_right = 171.0
+margin_bottom = 176.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Tattoos Down"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bfondo" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 440.0
+margin_right = 171.0
+margin_bottom = 472.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Background"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bexport" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 480.0
+margin_right = 171.0
+margin_bottom = 512.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Export Image"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bcopy" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 520.0
+margin_right = 171.0
+margin_bottom = 552.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Copy Clipboard"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bpaste" type="Button" parent="Modo"]
+margin_left = 16.0
+margin_top = 560.0
+margin_right = 171.0
+margin_bottom = 592.0
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+text = "Paste Clipboard"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bclear" type="Button" parent="Modo"]
+self_modulate = Color( 0.996078, 1, 0.780392, 1 )
+margin_left = 184.0
+margin_top = 440.0
+margin_right = 339.0
+margin_bottom = 472.0
+hint_tooltip = "right clic"
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+button_mask = 2
+enabled_focus_mode = 0
+text = "Clear"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BrCloths" type="Button" parent="Modo"]
+self_modulate = Color( 0.996078, 1, 0.780392, 1 )
+margin_left = 184.0
+margin_top = 480.0
+margin_right = 339.0
+margin_bottom = 512.0
+hint_tooltip = "right clic"
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+button_mask = 2
+enabled_focus_mode = 0
+text = "Random Cloths"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BrFace" type="Button" parent="Modo"]
+self_modulate = Color( 0.996078, 1, 0.780392, 1 )
+margin_left = 184.0
+margin_top = 520.0
+margin_right = 339.0
+margin_bottom = 552.0
+hint_tooltip = "right clic"
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+button_mask = 2
+enabled_focus_mode = 0
+text = "Random Face"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BrAll" type="Button" parent="Modo"]
+self_modulate = Color( 0.996078, 1, 0.780392, 1 )
+margin_left = 184.0
+margin_top = 560.0
+margin_right = 339.0
+margin_bottom = 592.0
+hint_tooltip = "right clic"
+focus_mode = 0
+theme = ExtResource( 20 )
+shortcut_in_tooltip = false
+button_mask = 2
+enabled_focus_mode = 0
+text = "Random All"
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Item" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B10" type="Button" parent="Item"]
+margin_left = 704.0
+margin_top = 32.0
+margin_right = 768.0
+margin_bottom = 152.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B10"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B10"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B10"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B9" type="Button" parent="Item"]
+margin_left = 776.0
+margin_top = 32.0
+margin_right = 840.0
+margin_bottom = 152.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B9"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B9"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B9"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B8" type="Button" parent="Item"]
+margin_left = 848.0
+margin_top = 32.0
+margin_right = 912.0
+margin_bottom = 152.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B8"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B8"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B8"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B7" type="Button" parent="Item"]
+margin_left = 920.0
+margin_top = 32.0
+margin_right = 984.0
+margin_bottom = 152.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B7"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B7"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B7"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B6" type="Button" parent="Item"]
+margin_left = 704.0
+margin_top = 160.0
+margin_right = 768.0
+margin_bottom = 280.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B6"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B6"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B6"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B5" type="Button" parent="Item"]
+margin_left = 776.0
+margin_top = 160.0
+margin_right = 840.0
+margin_bottom = 280.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B5"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B5"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B5"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B4" type="Button" parent="Item"]
+margin_left = 848.0
+margin_top = 160.0
+margin_right = 912.0
+margin_bottom = 280.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B4"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B4"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B4"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B3" type="Button" parent="Item"]
+margin_left = 920.0
+margin_top = 160.0
+margin_right = 984.0
+margin_bottom = 280.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B3"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B3"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B3"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B2" type="Button" parent="Item"]
+margin_left = 704.0
+margin_top = 288.0
+margin_right = 768.0
+margin_bottom = 408.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B2"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B2"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B2"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B1" type="Button" parent="Item"]
+margin_left = 776.0
+margin_top = 288.0
+margin_right = 840.0
+margin_bottom = 408.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B1"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B1"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B1"]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B0" type="Button" parent="Item"]
+margin_left = 848.0
+margin_top = 288.0
+margin_right = 984.0
+margin_bottom = 408.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Back" type="Sprite" parent="Item/B0"]
+position = Vector2( 32, 0 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moni" type="Sprite" parent="Item/B0"]
+position = Vector2( 32, 0 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Front" type="Sprite" parent="Item/B0"]
+position = Vector2( 32, 0 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+centered = false
+hframes = 11
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Color" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bred" type="Button" parent="Color"]
+self_modulate = Color( 0.878431, 0.141176, 0.141176, 1 )
+margin_left = 688.0
+margin_top = 448.0
+margin_right = 712.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Borange" type="Button" parent="Color"]
+self_modulate = Color( 0.862745, 0.54902, 0.235294, 1 )
+margin_left = 712.0
+margin_top = 448.0
+margin_right = 736.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Byellow" type="Button" parent="Color"]
+self_modulate = Color( 0.843137, 0.819608, 0.133333, 1 )
+margin_left = 736.0
+margin_top = 448.0
+margin_right = 760.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Blime" type="Button" parent="Color"]
+self_modulate = Color( 0.411765, 0.894118, 0.145098, 1 )
+margin_left = 760.0
+margin_top = 448.0
+margin_right = 784.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bgreen" type="Button" parent="Color"]
+self_modulate = Color( 0.14902, 0.666667, 0.109804, 1 )
+margin_left = 784.0
+margin_top = 448.0
+margin_right = 808.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Btea" type="Button" parent="Color"]
+self_modulate = Color( 0.278431, 0.772549, 0.509804, 1 )
+margin_left = 808.0
+margin_top = 448.0
+margin_right = 832.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Baqua" type="Button" parent="Color"]
+self_modulate = Color( 0.176471, 0.666667, 0.752941, 1 )
+margin_left = 832.0
+margin_top = 448.0
+margin_right = 856.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bblue" type="Button" parent="Color"]
+self_modulate = Color( 0.152941, 0.27451, 0.858824, 1 )
+margin_left = 856.0
+margin_top = 448.0
+margin_right = 880.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bpurple" type="Button" parent="Color"]
+self_modulate = Color( 0.607843, 0.168627, 0.780392, 1 )
+margin_left = 880.0
+margin_top = 448.0
+margin_right = 904.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bfuchsia" type="Button" parent="Color"]
+self_modulate = Color( 0.94902, 0.27451, 0.807843, 1 )
+margin_left = 904.0
+margin_top = 448.0
+margin_right = 928.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bwhite" type="Button" parent="Color"]
+margin_left = 928.0
+margin_top = 448.0
+margin_right = 952.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bgray" type="Button" parent="Color"]
+self_modulate = Color( 0.486275, 0.486275, 0.486275, 1 )
+margin_left = 952.0
+margin_top = 448.0
+margin_right = 976.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bblack" type="Button" parent="Color"]
+self_modulate = Color( 0.231373, 0.227451, 0.227451, 1 )
+margin_left = 976.0
+margin_top = 448.0
+margin_right = 1000.0
+margin_bottom = 504.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bblood" type="Button" parent="Color"]
+self_modulate = Color( 0.654902, 0.0431373, 0.0431373, 1 )
+margin_left = 688.0
+margin_top = 512.0
+margin_right = 712.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bskin" type="Button" parent="Color"]
+self_modulate = Color( 0.913725, 0.572549, 0.501961, 1 )
+margin_left = 712.0
+margin_top = 512.0
+margin_right = 736.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Byellow2" type="Button" parent="Color"]
+self_modulate = Color( 0.584314, 0.564706, 0.0117647, 1 )
+margin_left = 736.0
+margin_top = 512.0
+margin_right = 760.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bmusge" type="Button" parent="Color"]
+self_modulate = Color( 0.396078, 0.537255, 0.266667, 1 )
+margin_left = 760.0
+margin_top = 512.0
+margin_right = 784.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bgreen2" type="Button" parent="Color"]
+self_modulate = Color( 0.0784314, 0.423529, 0.0627451, 1 )
+margin_left = 784.0
+margin_top = 512.0
+margin_right = 808.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Btea2" type="Button" parent="Color"]
+self_modulate = Color( 0.133333, 0.482353, 0.345098, 1 )
+margin_left = 808.0
+margin_top = 512.0
+margin_right = 832.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Baqua2" type="Button" parent="Color"]
+self_modulate = Color( 0.054902, 0.411765, 0.458824, 1 )
+margin_left = 832.0
+margin_top = 512.0
+margin_right = 856.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bblue2" type="Button" parent="Color"]
+self_modulate = Color( 0.0666667, 0.137255, 0.533333, 1 )
+margin_left = 856.0
+margin_top = 512.0
+margin_right = 880.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bpurple2" type="Button" parent="Color"]
+self_modulate = Color( 0.321569, 0.0627451, 0.509804, 1 )
+margin_left = 880.0
+margin_top = 512.0
+margin_right = 904.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bfuchsia2" type="Button" parent="Color"]
+self_modulate = Color( 0.658824, 0.027451, 0.67451, 1 )
+margin_left = 904.0
+margin_top = 512.0
+margin_right = 928.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bcaqui" type="Button" parent="Color"]
+self_modulate = Color( 0.560784, 0.47451, 0.25098, 1 )
+margin_left = 928.0
+margin_top = 512.0
+margin_right = 952.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bbrown" type="Button" parent="Color"]
+self_modulate = Color( 0.533333, 0.294118, 0.156863, 1 )
+margin_left = 952.0
+margin_top = 512.0
+margin_right = 976.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bdark" type="Button" parent="Color"]
+self_modulate = Color( 0.32549, 0.247059, 0.0784314, 1 )
+margin_left = 976.0
+margin_top = 512.0
+margin_right = 1000.0
+margin_bottom = 568.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Piel" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bblanco" type="Button" parent="Piel"]
+self_modulate = Color( 0.972549, 0.709804, 0.709804, 1 )
+margin_left = 704.0
+margin_top = 448.0
+margin_right = 736.0
+margin_bottom = 576.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Blatin" type="Button" parent="Piel"]
+self_modulate = Color( 0.913725, 0.603922, 0.529412, 1 )
+margin_left = 744.0
+margin_top = 448.0
+margin_right = 776.0
+margin_bottom = 576.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bmestize" type="Button" parent="Piel"]
+self_modulate = Color( 0.666667, 0.494118, 0.286275, 1 )
+margin_left = 784.0
+margin_top = 448.0
+margin_right = 816.0
+margin_bottom = 576.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bamarillo" type="Button" parent="Piel"]
+self_modulate = Color( 0.905882, 0.619608, 0.305882, 1 )
+margin_left = 824.0
+margin_top = 448.0
+margin_right = 856.0
+margin_bottom = 576.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bhindi" type="Button" parent="Piel"]
+self_modulate = Color( 0.745098, 0.423529, 0.160784, 1 )
+margin_left = 864.0
+margin_top = 448.0
+margin_right = 896.0
+margin_bottom = 576.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Brojo" type="Button" parent="Piel"]
+self_modulate = Color( 0.588235, 0.215686, 0.137255, 1 )
+margin_left = 904.0
+margin_top = 448.0
+margin_right = 936.0
+margin_bottom = 576.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bnegro" type="Button" parent="Piel"]
+self_modulate = Color( 0.376471, 0.239216, 0.0705882, 1 )
+margin_left = 944.0
+margin_top = 448.0
+margin_right = 976.0
+margin_bottom = 576.0
+focus_mode = 0
+theme = ExtResource( 21 )
+shortcut_in_tooltip = false
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FileSave" type="FileDialog" parent="."]
+margin_left = 125.0
+margin_top = 64.0
+margin_right = 896.0
+margin_bottom = 512.0
+rect_min_size = Vector2( 150, 52.5 )
+window_title = "Save Image"
+resizable = true
+access = 2
+filters = PoolStringArray( "*.png;PNG Images" )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AudSave" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
+
+[node name="AudOpen" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 22 )
+
+[connection signal="pressed" from="Modo/Bsombrero" to="." method="_on_Bsombrero_pressed"]
+[connection signal="pressed" from="Modo/Bcabello" to="." method="_on_Bcabello_pressed"]
+[connection signal="pressed" from="Modo/Bpelo" to="." method="_on_Bpelo_pressed"]
+[connection signal="pressed" from="Modo/Bgafas" to="." method="_on_Bgafas_pressed"]
+[connection signal="pressed" from="Modo/BojosPiel" to="." method="_on_BojosPiel_pressed"]
+[connection signal="pressed" from="Modo/Bbarba" to="." method="_on_Bbarba_pressed"]
+[connection signal="pressed" from="Modo/Bcollar" to="." method="_on_Bcollar_pressed"]
+[connection signal="pressed" from="Modo/Bcamisa" to="." method="_on_Bcamisa_pressed"]
+[connection signal="pressed" from="Modo/Bchaqueta" to="." method="_on_Bchaqueta_pressed"]
+[connection signal="pressed" from="Modo/Bmangas" to="." method="_on_Bmangas_pressed"]
+[connection signal="pressed" from="Modo/Binterior" to="." method="_on_Binterior_pressed"]
+[connection signal="pressed" from="Modo/Bpantalon" to="." method="_on_Bpantalon_pressed"]
+[connection signal="pressed" from="Modo/Bfalda" to="." method="_on_Bfalda_pressed"]
+[connection signal="pressed" from="Modo/Bcalzado" to="." method="_on_Bcalzado_pressed"]
+[connection signal="pressed" from="Modo/BtatuajesU" to="." method="_on_BtatuajesU_pressed"]
+[connection signal="pressed" from="Modo/BtatuajesD" to="." method="_on_BtatuajesD_pressed"]
+[connection signal="pressed" from="Modo/Bfondo" to="." method="_on_Bfondo_pressed"]
+[connection signal="pressed" from="Modo/Bexport" to="." method="_on_Bexport_pressed"]
+[connection signal="pressed" from="Modo/Bcopy" to="." method="_on_Bcopy_pressed"]
+[connection signal="pressed" from="Modo/Bpaste" to="." method="_on_Bpaste_pressed"]
+[connection signal="pressed" from="Modo/Bclear" to="." method="_on_Bclear_pressed"]
+[connection signal="pressed" from="Modo/BrCloths" to="." method="_on_BrCloths_pressed"]
+[connection signal="pressed" from="Modo/BrFace" to="." method="_on_BrFace_pressed"]
+[connection signal="pressed" from="Modo/BrAll" to="." method="_on_BrAll_pressed"]
+[connection signal="pressed" from="Item/B10" to="." method="_on_B10_pressed"]
+[connection signal="pressed" from="Item/B9" to="." method="_on_B9_pressed"]
+[connection signal="pressed" from="Item/B8" to="." method="_on_B8_pressed"]
+[connection signal="pressed" from="Item/B7" to="." method="_on_B7_pressed"]
+[connection signal="pressed" from="Item/B6" to="." method="_on_B6_pressed"]
+[connection signal="pressed" from="Item/B5" to="." method="_on_B5_pressed"]
+[connection signal="pressed" from="Item/B4" to="." method="_on_B4_pressed"]
+[connection signal="pressed" from="Item/B3" to="." method="_on_B3_pressed"]
+[connection signal="pressed" from="Item/B2" to="." method="_on_B2_pressed"]
+[connection signal="pressed" from="Item/B1" to="." method="_on_B1_pressed"]
+[connection signal="pressed" from="Item/B0" to="." method="_on_B0_pressed"]
+[connection signal="pressed" from="Color/Bred" to="." method="_on_Bred_pressed"]
+[connection signal="pressed" from="Color/Borange" to="." method="_on_Borange_pressed"]
+[connection signal="pressed" from="Color/Byellow" to="." method="_on_Byellow_pressed"]
+[connection signal="pressed" from="Color/Blime" to="." method="_on_Blime_pressed"]
+[connection signal="pressed" from="Color/Bgreen" to="." method="_on_Bgreen_pressed"]
+[connection signal="pressed" from="Color/Btea" to="." method="_on_Btea_pressed"]
+[connection signal="pressed" from="Color/Baqua" to="." method="_on_Baqua_pressed"]
+[connection signal="pressed" from="Color/Bblue" to="." method="_on_Bblue_pressed"]
+[connection signal="pressed" from="Color/Bpurple" to="." method="_on_Bpurple_pressed"]
+[connection signal="pressed" from="Color/Bfuchsia" to="." method="_on_Bfuchsia_pressed"]
+[connection signal="pressed" from="Color/Bwhite" to="." method="_on_Bwhite_pressed"]
+[connection signal="pressed" from="Color/Bgray" to="." method="_on_Bgray_pressed"]
+[connection signal="pressed" from="Color/Bblack" to="." method="_on_Bblack_pressed"]
+[connection signal="pressed" from="Color/Bblood" to="." method="_on_Bblood_pressed"]
+[connection signal="pressed" from="Color/Bskin" to="." method="_on_Bskin_pressed"]
+[connection signal="pressed" from="Color/Byellow2" to="." method="_on_Byellow2_pressed"]
+[connection signal="pressed" from="Color/Bmusge" to="." method="_on_Bmusge_pressed"]
+[connection signal="pressed" from="Color/Bgreen2" to="." method="_on_Bgreen2_pressed"]
+[connection signal="pressed" from="Color/Btea2" to="." method="_on_Btea2_pressed"]
+[connection signal="pressed" from="Color/Baqua2" to="." method="_on_Baqua2_pressed"]
+[connection signal="pressed" from="Color/Bblue2" to="." method="_on_Bblue2_pressed"]
+[connection signal="pressed" from="Color/Bpurple2" to="." method="_on_Bpurple2_pressed"]
+[connection signal="pressed" from="Color/Bfuchsia2" to="." method="_on_Bfuchsia2_pressed"]
+[connection signal="pressed" from="Color/Bcaqui" to="." method="_on_Bcaqui_pressed"]
+[connection signal="pressed" from="Color/Bbrown" to="." method="_on_Bbrown_pressed"]
+[connection signal="pressed" from="Color/Bdark" to="." method="_on_Bdark_pressed"]
+[connection signal="pressed" from="Piel/Bblanco" to="." method="_on_Bblanco_pressed"]
+[connection signal="pressed" from="Piel/Blatin" to="." method="_on_Blatin_pressed"]
+[connection signal="pressed" from="Piel/Bmestize" to="." method="_on_Bmestize_pressed"]
+[connection signal="pressed" from="Piel/Bamarillo" to="." method="_on_Bamarillo_pressed"]
+[connection signal="pressed" from="Piel/Bhindi" to="." method="_on_Bhindi_pressed"]
+[connection signal="pressed" from="Piel/Brojo" to="." method="_on_Brojo_pressed"]
+[connection signal="pressed" from="Piel/Bnegro" to="." method="_on_Bnegro_pressed"]
+[connection signal="file_selected" from="FileSave" to="." method="_on_FileDialog_file_selected"]
